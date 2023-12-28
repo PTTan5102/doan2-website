@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=""viewpoint" content="width-device-width", initial-scale-1.0">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="annoymous"></script>
+    <link rel="stylesheet" href="./style/stylemain.css">
+    <title>Pham Thanh Tan</title>
+</head>
+<body>
+<section>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src = "logo/logo.png">
+        </a>
+    </div>
+    <div class="menu">
+        <li><a href="cartegory.html">GENSHIN</a>
+            <ul class="sub-menu">
+                <li><a href="cartegory.html">Móc Khóa</a>
+                <ul>
+                    <li><a href="">Ayaka</a></li>
+                    <li><a href="">Eula</a></li>
+                    <li><a href="">Ganyu</a></li>
+                    <li><a href="">Kazuha</a></li>
+                    <li><a href="">Kequing</a></li>
+                    <li><a href="">Mona</a></li>
+                    <li><a href="">Qiqi</a></li>
+                    <li><a href="">Sayu</a></li>
+                </ul>  
+                </li>
+                <li><a href="cartegory2.html">Stand</a>
+                    <ul>
+                        <li><a href="">Albedo</a></li>
+                        <li><a href="">Childe</a></li>
+                        <li><a href="">Diona</a></li>
+                        <li><a href="">Eula</a></li>
+                        <li><a href="">Ganyu</a></li>
+                        <li><a href="">Xiao</a></li>
+                        <li><a href="">Zhongli</a></li>
+                    </ul>   
+                </li>         
+            </ul>
+        </li>
+        <li><a href="cartegory1.html">HONKAI STAR RAIL</a>
+            <ul class="sub-menu">
+                <li><a href="cartegory1.html">Móc Khóa</a>
+                <ul>
+                    <li><a href="">Guinaifen</a></li>
+                    <li><a href="">Jingyuan</a></li>
+                    <li><a href="">Kafka</a></li>
+                    <li><a href="">Luka</a></li>
+                    <li><a href="">March 7th</a></li>
+                    <li><a href="">Pela</a></li>
+                    <li><a href="">Silver Wolf</a></li>
+                </ul>   
+                </li>                   
+            </ul>
+        </li>
+    </div>
+    <div class="others">
+        <li><input placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+        <li><a class="fa fa-money-bill-alt" href="bill.html"></a></li>
+        <li><a class="fa fa-user" href=""></a></li>
+        <li><a class="fa fa-shopping-bag" href="cart.html"></a></li> 
+        <li><a class="dangxuat" href="">Đăng xuất</a></li>         
+    </div>
+</header>
+</section>
+
+<!-- ------------------Slider------------------- -->
+<section id="Slider">
+<div class="aspect-ratio-169">
+    <img src="image/slide1.jpg">
+    <img src="image/images/qc.png">
+    <img src="image/images/qc1.png">
+    <img src="image/images/qc2.png">
+    <img src="image/images/qc3.png">
+    <img src="image/images/qc4.png">
+</div>
+<div class="dot-container">
+    <div class="dot activebutton"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot "></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+</body>
+</section>
+<!-----------------------footer------- -->
+<section class="app-container">
+    <p>Tải Ứng Dụng </p>
+    <div class="app-google">
+        <a href=""><img src="image/app-store.png"></a>
+        <a href=""><img src="image/googleplay.png"></a>
+    </div>
+    <p>Nhập email của bạn </p>
+    <input type="text" placeholder="Nhập email của bạn...">
+</section>
+<div class="footer-top">
+    <li><a href="index.html"><img src="logo/logo.png" alt=""></a></li>
+    <li><a href="">Liên hệ</a></li>
+    <li><a href="">Tuyển dụng</a></li>
+    <li><a href="">Giới thiệu</a></li>
+    <li>
+        <a href="" class="fab fa-facebook-f"></a>
+        <a href="" class="fab fa-twitter"></a>
+        <a href="" class="fab fa-youtube"></a>
+    </li>  
+</div>
+<div class="footer-center">
+<p>
+Họ và tên: Phạm Thanh Tân MSSV: 20119372 <br>
+Sinh viên năm 4 ngành CNKT Máy tính <br>
+SDT: 0843585098 Email: <a href=""><b>20119372@student.hcmute.edu.vn</b></a><br>
+Zalo: ............ GitHub:...........
+</p>
+</div>
+<div class="footer-bottom">
+    Đồ Án 2 : TRANG WEB BÁN HÀNG
+</div>
+<!-----------------JavaScript--------->
+<script>
+const header = document.querySelector("header");
+window.addEventListener("scroll",function(){
+    x = window.pageYOffset
+    if (x > 0){
+        header.classList.remove("sticky")
+    }
+    else{
+        header.classList.add("sticky")
+    }
+})
+const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+const imgContainer = document.querySelector('.aspect-ratio-169')
+const dotItem = document.querySelectorAll(".dot")
+imgNuber = imgPosition.length 
+let index = 0;
+imgPosition.forEach(function(image,index){
+    image.style.left = index * 100 + "%"
+    dotItem[index].addEventListener("click",function(){
+    slider(index)
+    })
+})
+function imgSlide (){
+    index++;
+    if(index >= imgNuber){index = 0}
+    slider (index)
+}
+
+function slider (index){   
+    imgContainer.style.left = "-"+ index * 100 + "%"
+    const dotActive = document.querySelector('.activebutton')
+    dotActive.classList.remove("activebutton")
+    dotItem[index].classList.add("activebutton")
+}
+setInterval(imgSlide,3000)
+</script>
+<script src="./js/main.js"></script>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=""viewpoint" content="width-device-width", initial-scale-1.0">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="annoymous"></script>
+    <link rel="stylesheet" href="./style/stylemain.css">
+    <title>Pham Thanh Tan</title>
+</head>
+<body>
+<section>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src = "logo/logo.png">
+            </a>
+        </div>
+        <div class="menu">
+            <li><a href="cartegory.html">GENSHIN</a>
+                <ul class="sub-menu">
+                    <li><a href="cartegory.html">Móc Khóa</a>
+                    <ul>
+                        <li><a href="">Ayaka</a></li>
+                        <li><a href="">Eula</a></li>
+                        <li><a href="">Ganyu</a></li>
+                        <li><a href="">Kazuha</a></li>
+                        <li><a href="">Kequing</a></li>
+                        <li><a href="">Mona</a></li>
+                        <li><a href="">Qiqi</a></li>
+                        <li><a href="">Sayu</a></li>
+                    </ul>  
+                    </li>
+                    <li><a href="cartegory2.html">Stand</a>
+                        <ul>
+                            <li><a href="">Albedo</a></li>
+                            <li><a href="">Childe</a></li>
+                            <li><a href="">Diona</a></li>
+                            <li><a href="">Eula</a></li>
+                            <li><a href="">Ganyu</a></li>
+                            <li><a href="">Xiao</a></li>
+                            <li><a href="">Zhongli</a></li>
+                        </ul>   
+                    </li>         
+                </ul>
+            </li>
+            <li><a href="cartegory1.html">HONKAI STAR RAIL</a>
+                <ul class="sub-menu">
+                    <li><a href="cartegory1.html">Móc Khóa</a>
+                    <ul>
+                        <li><a href="">Guinaifen</a></li>
+                        <li><a href="">Jingyuan</a></li>
+                        <li><a href="">Kafka</a></li>
+                        <li><a href="">Luka</a></li>
+                        <li><a href="">March 7th</a></li>
+                        <li><a href="">Pela</a></li>
+                        <li><a href="">Silver Wolf</a></li>
+                    </ul>   
+                    </li>                   
+                </ul>
+            </li>
+        </div>
+        <div class="others">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+            <li><a class="fa fa-money-bill-alt" href="bill.html"></a></li>
+            <li><a class="fa fa-user" href=""></a></li>
+            <li><a class="fa fa-shopping-bag" href="cart.html"></a></li> 
+            <li><a class="dangxuat" href="">Đăng xuất</a></li>         
+        </div>
+    </header>
+</section>
+
+<!-- ------------------Delivery------------------- -->
+<section class="delivery">
+    <div class="container">
+        <div class = "delivery-top-wrap" >
+            <div class="delivery-top ">
+                <div class="delivery-top-cart delivery-top-item" ><a href="cart.html">
+                     <i class="fas fa-shopping-cart" ></i></a>
+                </div>
+                <div class="delivery-top-address delivery-top-item"><a href="delivery.html">
+                     <i class="fas fa-map-marker-alt" ></i></a>
+                </div>
+                <div class="delivery-top-payment delivery-top-item"><a href="payment.html">
+                     <i class="fas fa-money-check-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class = "delivery-content row" >
+            <div class="delivery-content-left ">
+                <p>Vui lòng chọn địa chỉ giao hàng</p>
+                <div class="delivery-content-left-input-top row">
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Họ tên <span style="color:red;">*</span></label>
+                        <input type ="text" name="hoten">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">SDT <span style="color:red;">*</span></label>
+                        <input type ="text" name="sdt">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Tỉnh/TP <span style="color:red;">*</span></label>
+                        <input type ="text" name="tinhtp">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Quận/Huyện <span style="color:red;">*</span></label>
+                        <input type ="text" name="quanhuyen">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Phường/Xã <span style="color:red;">*</span></label>
+                        <input type ="text" name="phuongxa">
+                    </div>
+                </div>
+                <div class="delivery-content-left-input-bottom ">
+                    <div class="delivery-content-left-input-bottom-item">
+                        <label for="">Địa chỉ <span style="color:red;">*</span></label>
+                        <input type ="text" name="diachi">
+                    </div>
+                    <div class="delivery-content-left-button row">
+                        <a href="cart.html"><span>&#171;&#171;</span><p>Quay lại giỏ hàng</p></a>
+                        <!-- <a href="payment.html"> -->
+                        <button onclick="dongydathang();"><p style="font-weight: bold;">THANH TOÁN VÀ GIAO HÀNG</p></button>
+                        <!-- </a> -->
+                    </div>
+                </div>           
+            </div>
+            <div class="delivery-content-right">             
+                    <table>
+                        <tbody id = "cartbill">
+                        </tbody>
+                    </table>               
+            </div>
+        </div>
+</section>
+
+<!-----------------------footer------- -->
+<section class="app-container">
+    <p>Tải Ứng Dụng </p>
+    <div class="app-google">
+        <a href=""><img src="image/app-store.png"></a>
+        <a href=""><img src="image/googleplay.png"></a>
+    </div>
+    <p>Nhập email của bạn </p>
+    <input type="text" placeholder="Nhập email của bạn...">
+</section>
+<div class="footer-top">
+    <li><a href="index.html"><img src="logo/logo.png" alt=""></a></li>
+    <li><a href="">Liên hệ</a></li>
+    <li><a href="">Tuyển dụng</a></li>
+    <li><a href="">Giới thiệu</a></li>
+    <li>
+        <a href="" class="fab fa-facebook-f"></a>
+        <a href="" class="fab fa-twitter"></a>
+        <a href="" class="fab fa-youtube"></a>
+    </li>  
+</div>
+<div class="footer-center">
+<p>
+Họ và tên: Phạm Thanh Tân MSSV: 20119372 <br>
+Sinh viên năm 4 ngành CNKT Máy tính <br>
+SDT: 0843585098 Email: <a href=""><b>20119372@student.hcmute.edu.vn</b></a><br>
+Zalo: ............ GitHub:...........
+</p>
+</div>
+<div class="footer-bottom">
+    Đồ Án 2 : TRANG WEB BÁN HÀNG
+</div>
+<!-----------------JavaScript--------->
+<script>
+    const header = document.querySelector("header");
+    window.addEventListener("scroll",function(){
+        x = window.pageYOffset
+        if (x > 0){
+            header.classList.remove("sticky")
+        }
+        else{
+            header.classList.add("sticky")
+        }
+    })
+</script>
+<script src="./js/cart.js"></script>
+<script>  showcartbill();</script>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=""viewpoint" content="width-device-width", initial-scale-1.0">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="annoymous"></script>
+    <link rel="stylesheet" href="./style/stylemain.css">
+    <title>Pham Thanh Tan</title>
+</head>
+<body>
+<section>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src = "logo/logo.png">
+            </a>
+        </div>
+        <div class="menu">
+            <li><a href="cartegory.html">GENSHIN</a>
+                <ul class="sub-menu">
+                    <li><a href="cartegory.html">Móc Khóa</a>
+                    <ul>
+                        <li><a href="">Ayaka</a></li>
+                        <li><a href="">Eula</a></li>
+                        <li><a href="">Ganyu</a></li>
+                        <li><a href="">Kazuha</a></li>
+                        <li><a href="">Kequing</a></li>
+                        <li><a href="">Mona</a></li>
+                        <li><a href="">Qiqi</a></li>
+                        <li><a href="">Sayu</a></li>
+                    </ul>  
+                    </li>
+                    <li><a href="cartegory2.html">Stand</a>
+                        <ul>
+                            <li><a href="">Albedo</a></li>
+                            <li><a href="">Childe</a></li>
+                            <li><a href="">Diona</a></li>
+                            <li><a href="">Eula</a></li>
+                            <li><a href="">Ganyu</a></li>
+                            <li><a href="">Xiao</a></li>
+                            <li><a href="">Zhongli</a></li>
+                        </ul>   
+                    </li>         
+                </ul>
+            </li>
+            <li><a href="cartegory1.html">HONKAI STAR RAIL</a>
+                <ul class="sub-menu">
+                    <li><a href="cartegory1.html">Móc Khóa</a>
+                    <ul>
+                        <li><a href="">Guinaifen</a></li>
+                        <li><a href="">Jingyuan</a></li>
+                        <li><a href="">Kafka</a></li>
+                        <li><a href="">Luka</a></li>
+                        <li><a href="">March 7th</a></li>
+                        <li><a href="">Pela</a></li>
+                        <li><a href="">Silver Wolf</a></li>
+                    </ul>   
+                    </li>                   
+                </ul>
+            </li>
+        </div>
+        <div class="others">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+            <li><a class="fa fa-money-bill-alt" href="bill.html"></a></li>
+            <li><a class="fa fa-user" href=""></a></li>
+            <li><a class="fa fa-shopping-bag" href="cart.html"></a></li> 
+            <li><a class="dangxuat" href="">Đăng xuất</a></li>         
+        </div>
+    </header>
+</section>
+<!-----------------------Categoty------- -->
+<section class="cartegory ">
+    <div class="container ">
+        <div class="cartegory-top row">
+            <p><a href="index.html">Trang chủ </a></p><span> &#10230 </span><p><a href="cartegory1.html">HONKAI STAR RAIL</a></p><span> &#10230 </span><p>Móc khóa</p>
+        </div>
+        <div class = "giohang">
+            <a onclick="showcart()"><img src="image/cart.jpg"></a>
+            <span id="countsp">0</span>
+        </div>
+        <div id ="showcart">
+            <div class="cart-content-left">
+                <table>
+                    <tr>
+                        <th>STT</th>
+                        <th>SẢN PHẨM</th>
+                        <th>TÊN SẢN PHẨM</th>
+                        <th>SL</th>
+                        <th>ĐƠN GIÁ</th>
+                        <th>THÀNH TIỀN</th>  
+                        <th>XÓA</th>                        
+                    </tr>
+                    <tbody id="mycart">
+
+                    </tbody>
+                </table>
+                <button id = "xoatatca" onclick="xoatatca()">Xóa tất cả</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">    
+        <div class="row">
+            <div class="cartegory-left">
+                <ul>
+                    <li class= "cartegory-left-li"><a href="#">GENSHIN</a>
+                        <ul>
+                            <li class= "cartegory-left-title"><a href="cartegory.html">Móc khóa</a>
+                                <ul>
+                                    <li><a href="">Ayaka</a></li>
+                                    <li><a href="">Eula</a></li>
+                                    <li><a href="">Ganyu</a></li>
+                                    <li><a href="">Kazuha</a></li>
+                                    <li><a href="">Kequing</a></li>
+                                    <li><a href="">Mona</a></li>
+                                    <li><a href="">Qiqi</a></li>
+                                    <li><a href="">Sayu</a></li>
+                                </ul>                                                                   
+                            </li> 
+                            <li class= "cartegory-left-title"><a href="cartegory2.html">Stand</a>
+                                <ul>
+                                    <li><a href="">Albedo</a></li>
+                                    <li><a href="">Childe</a></li>
+                                    <li><a href="">Diona</a></li>
+                                    <li><a href="">Eula</a></li>
+                                    <li><a href="">Ganyu</a></li>
+                                    <li><a href="">Xiao</a></li>
+                                    <li><a href="">Zhongli</a></li>
+                                </ul>                    
+                            </li>                         
+                        </ul>
+                    </li>
+                    <li class= "cartegory-left-li"><a href="#">HONKAI STAR RAIL</a> 
+                       <ul>
+                        <li class= "cartegory-left-title"><a href="cartegory1.html">Móc Khóa</a>
+                            <ul>
+                                <li><a href="">Guinaifen</a></li>
+                                <li><a href="">Jingyuan</a></li>
+                                <li><a href="">Kafka</a></li>
+                                <li><a href="">Luka</a></li>
+                                <li><a href="">March 7th</a></li>
+                                <li><a href="">Pela</a></li>
+                                <li><a href="">Silver Wolf</a></li>
+                            </ul>   
+                        </li>  
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="cartegory-right row">
+                <div class="cartegory-right-top-item">
+                    <p>Móc khóa</p>
+                </div>
+                <div class="cartegory-right-top-item">
+                    <button><span>Bộ lọc</span><i class="fas fa-sort-down"></i></button>
+                </div>
+                <div class="cartegory-right-top-item">
+                   <select name="" id="">
+                        <option value="">Sắp xếp</option>
+                        <option value="">Giá thấp đến cao</option>
+                        <option value="">Giá cao đến thấp</option>
+                   </select>
+                </div>
+                <div class="cartegory-right-content row">
+                    <div class="cartegory-right-content-item">
+                        <a href="product.html"><img src="image/images/MocKhoa/Honkai/guinaifen.png" alt=""></a>
+                        <h1>Móc khóa Guinaifen </h1>
+                        <p><span>199.000</span><sup>đ</sup></p>
+                        <input type="number" name="num" min="1" max="10" value="1">
+                        <button onclick="addcart(this)">Mua</button>
+                    </div>
+                    <div class="cartegory-right-content-item">
+                        <a href="product.html"><img src="image/images/MocKhoa/Honkai/jingyuan.png" alt=""></a>
+                        <h1>Móc khóa Jingyuan </h1>
+                        <p><span>199.000</span><sup>đ</sup></p>
+                        <input type="number" name="num" min="1" max="10" value="1">
+                        <button onclick="addcart(this)">Mua</button>
+                    </div>
+                    <div class="cartegory-right-content-item">
+                        <a href="product.html"><img src="image/images/MocKhoa/Honkai/kafka.png" alt=""></a>
+                        <h1>Móc khóa Kafka </h1>
+                        <p><span>199.000</span><sup>đ</sup></p>
+                        <input type="number" name="num" min="1" max="10" value="1">
+                        <button onclick="addcart(this)">Mua</button>
+                    </div>
+                    <div class="cartegory-right-content-item">
+                        <a href="product.html"><img src="image/images/MocKhoa/Honkai/luka.png" alt=""></a>
+                        <h1>Móc khóa Luka </h1>
+                        <p><span>199.000</span><sup>đ</sup></p>
+                        <input type="number" name="num" min="1" max="10" value="1">
+                        <button onclick="addcart(this)">Mua</button>
+                    </div>
+                    <div class="cartegory-right-content-item">
+                        <a href="product.html"><img src="image/images/MocKhoa/Honkai/march7th.png" alt=""></a>
+                        <h1>Móc khóa March 7th </h1>
+                        <p><span>199.000</span><sup>đ</sup></p>
+                        <input type="number" name="num" min="1" max="10" value="1">
+                        <button onclick="addcart(this)">Mua</button>
+                    </div>
+                    <div class="cartegory-right-content-item">
+                        <a href="product.html"><img src="image/images/MocKhoa/Honkai/pela.png" alt=""></a>
+                        <h1>Móc khóa Pela </h1>
+                        <p><span>199.000</span><sup>đ</sup></p>
+                        <input type="number" name="num" min="1" max="10" value="1">
+                        <button onclick="addcart(this)">Mua</button>
+                    </div>
+                    <div class="cartegory-right-content-item">
+                        <a href="product.html"><img src="image/images/MocKhoa/Honkai/sliverwolf.png" alt=""></a>
+                        <h1>Móc khóa Sliver Wolf </h1>
+                        <p><span>199.000</span><sup>đ</sup></p>
+                        <input type="number" name="num" min="1" max="10" value="1">
+                        <button onclick="addcart(this)">Mua</button>
+                    </div>
+                    <div class="cartegory-right-content-item">
+                    </div>
+                    <div class="cartegory-right-bottom row">
+                        <div class="category-right-bottom-items">
+                            <p>Hiển thị 7 <span>|</span> 8 sản phẩm</p>
+                        </div>
+                        <div class="cartegory-right-bottom-items">
+                            <p><span>&#171;</span> 1  <span>&#187;</span> Trang cuối</p>
+                        </div>
+                    </div>
+                </div>               
+            </div>         
+        </div>
+    </div>
+</section>
+
+
+
+<!-----------------------footer------- -->
+<section class="app-container">
+    <p>Tải Ứng Dụng </p>
+    <div class="app-google">
+        <a href=""><img src="image/app-store.png"></a>
+        <a href=""><img src="image/googleplay.png"></a>
+    </div>
+    <p>Nhập email của bạn </p>
+    <input type="text" placeholder="Nhập email của bạn...">
+</section>
+<div class="footer-top">
+    <li><a href="index.html"><img src="logo/logo.png" alt=""></a></li>
+    <li><a href="">Liên hệ</a></li>
+    <li><a href="">Tuyển dụng</a></li>
+    <li><a href="">Giới thiệu</a></li>
+    <li>
+        <a href="" class="fab fa-facebook-f"></a>
+        <a href="" class="fab fa-twitter"></a>
+        <a href="" class="fab fa-youtube"></a>
+    </li>  
+</div>
+<div class="footer-center">
+<p>
+Họ và tên: Phạm Thanh Tân MSSV: 20119372 <br>
+Sinh viên năm 4 ngành CNKT Máy tính <br>
+SDT: 0843585098 Email: <a href=""><b>20119372@student.hcmute.edu.vn</b></a><br>
+Zalo: ............ GitHub:...........
+</p>
+</div>
+<div class="footer-bottom">
+    Đồ Án 2 : TRANG WEB BÁN HÀNG
+</div>
+</body>
+<!-----------------JavaScript--------->
+<script>
+    const header = document.querySelector("header");
+    window.addEventListener("scroll",function(){
+        x = window.pageYOffset
+        if (x > 0){
+            header.classList.remove("sticky")
+        }
+        else{
+            header.classList.add("sticky")
+        }
+    })
+</script>
+<script src="./js/main.js"></script>
+
+</html>
